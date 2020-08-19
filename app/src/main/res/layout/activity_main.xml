@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Spinner
+        android:id="@+id/make_dropdown"
+        android:layout_width="260dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="85dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/model_dropdown"
+        android:layout_width="260dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/make_dropdown" />
+
+    <Spinner
+        android:id="@+id/year_dropdown"
+        android:layout_width="119dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginLeft="44dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/trim_textbox" />
+
+    <Spinner
+        android:id="@+id/max_year_dropdown"
+        android:layout_width="119dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="204dp"
+        android:layout_marginLeft="204dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/trim_textbox" />
+
+    <Spinner
+        android:id="@+id/distance_dropdown"
+        android:layout_width="119dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginLeft="44dp"
+        android:layout_marginTop="48dp"
+        android:spinnerMode="dropdown"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/year_dropdown" />
+
+    <EditText
+        android:id="@+id/zip_textbox"
+        android:layout_width="145dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="204dp"
+        android:layout_marginLeft="204dp"
+        android:layout_marginTop="48dp"
+        android:ems="10"
+        android:inputType="number"
+        android:singleLine="true"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/year_dropdown" />
+
+    <EditText
+        android:id="@+id/trim_textbox"
+        android:layout_width="259dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="45dp"
+        android:ems="10"
+        android:inputType="text"
+        android:singleLine="true"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/model_dropdown" />
+
+    <TextView
+        android:id="@+id/make_lbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginBottom="10dp"
+        android:text="Make"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/make_dropdown"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/model_lbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginBottom="10dp"
+        android:text="Model"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/model_dropdown"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/trim_lbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginBottom="15dp"
+        android:text="Trim (Optional)"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/trim_textbox"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/year_lbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginLeft="44dp"
+        android:layout_marginBottom="12dp"
+        android:text="Min Model Year"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/year_dropdown"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/distance_lbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginLeft="44dp"
+        android:layout_marginBottom="15dp"
+        android:text="Within __ Miles"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/distance_dropdown"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/zip_lbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:text="Of Zip Code"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/zip_textbox"
+        app:layout_constraintStart_toStartOf="@+id/zip_textbox" />
+
+    <Button
+        android:id="@+id/more_params_button"
+        android:layout_width="135dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="45dp"
+        android:text="More Options"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/distance_dropdown" />
+
+    <Button
+        android:id="@+id/search_button"
+        android:layout_width="135dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:text="Search"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/zip_textbox" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="325dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="10dp"
+        android:text="Please fill in the fields below with your desired search parameters."
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/max_year_lbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:text="Max Model Year"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/max_year_dropdown"
+        app:layout_constraintStart_toStartOf="@+id/max_year_dropdown" />
+</android.support.constraint.ConstraintLayout>

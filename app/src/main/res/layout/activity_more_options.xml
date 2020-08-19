@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MoreOptionsActivity">
+
+    <Spinner
+        android:id="@+id/seller_dropdown"
+        android:layout_width="260dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="70dp"
+        android:spinnerMode="dropdown"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/color_dropdown"
+        android:layout_width="260dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seller_dropdown" />
+
+    <Spinner
+        android:id="@+id/mileage_dropdown"
+        android:layout_width="260dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/color_dropdown" />
+
+    <Spinner
+        android:id="@+id/transmission_dropdown"
+        android:layout_width="260dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mileage_dropdown" />
+
+    <Spinner
+        android:id="@+id/engine_dropdown"
+        android:layout_width="260dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/transmission_dropdown" />
+
+    <Spinner
+        android:id="@+id/drivetype_dropdown"
+        android:layout_width="260dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/engine_dropdown" />
+
+    <TextView
+        android:id="@+id/seller_type_lbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginBottom="10dp"
+        android:text="Seller Type (optional)"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/seller_dropdown"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/color_lbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginBottom="10dp"
+        android:text="Color (optional)"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/color_dropdown"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/mileage_lbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginBottom="10dp"
+        android:text="Vehicle Mileage (optional)"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/mileage_dropdown"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/transmission_lbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginBottom="10dp"
+        android:text="Transmission Type (optional)"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/transmission_dropdown"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/engine_lbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginBottom="10dp"
+        android:text="Engine Cylinders/Type (optional)"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/engine_dropdown"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/drivetype_lbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginBottom="10dp"
+        android:text="Drive Type (optional)"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/drivetype_dropdown"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/search_mo_button"
+        android:layout_width="157dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="105dp"
+        android:layout_marginLeft="105dp"
+        android:layout_marginTop="30dp"
+        android:text="SEARCH"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/drivetype_dropdown" />
+</android.support.constraint.ConstraintLayout>
