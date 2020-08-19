@@ -1,3 +1,10 @@
+/*************************************************************************/
+/*  File Name: SingleListingWindow.java                                  */
+/*  Purpose: Window opened when clicking on an individual listing.       */
+/*  Created by: Darren Cicala on 3/1/19.                                 */
+/*  Copyright © 2019 Darren Cicala. All rights reserved.                 */
+/*************************************************************************/
+
 package com.example.marketcheckcarsearchapp;
 
 import android.content.Intent;

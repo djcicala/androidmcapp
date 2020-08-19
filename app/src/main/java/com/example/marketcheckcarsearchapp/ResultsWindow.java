@@ -1,3 +1,10 @@
+/*************************************************************************/
+/*  File Name: ResultsWindow.java                                        */
+/*  Purpose: Window that appears after performing a query.               */
+/*  Created by: Darren Cicala on 3/1/19.                                 */
+/*  Copyright © 2019 Darren Cicala. All rights reserved.                 */
+/*************************************************************************/
+
 package com.example.marketcheckcarsearchapp;
 
 import android.content.Context;

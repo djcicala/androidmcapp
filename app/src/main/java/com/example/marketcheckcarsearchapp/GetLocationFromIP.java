@@ -1,3 +1,10 @@
+/*************************************************************************/
+/*  File Name: GetLocationFromIP.java                                    */
+/*  Purpose: Activity to get approximate location using the IP address.  */
+/*  Created by: Darren Cicala on 3/1/19.                                 */
+/*  Copyright © 2019 Darren Cicala. All rights reserved.                 */
+/*************************************************************************/
+
 package com.example.marketcheckcarsearchapp;
 
 import android.os.AsyncTask;

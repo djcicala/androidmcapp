@@ -1,3 +1,10 @@
+/*************************************************************************/
+/*  File Name: MainActivity.java                                         */
+/*  Purpose: Main activity of this application.                          */
+/*  Created by: Darren Cicala on 3/1/19.                                 */
+/*  Copyright © 2019 Darren Cicala. All rights reserved.                 */
+/*************************************************************************/
+
 package com.example.marketcheckcarsearchapp;
 
 import android.Manifest;
@@ -55,10 +62,10 @@ public class MainActivity extends AppCompatActivity
     public double gps_lat;
     public double gps_lon;
 
-    public String mc_api_key = "00Kbr7oiG7WwYHpbcletfMZ5TbTkjQaA";
+    public String mc_api_key = "";
     public String mc_base_url = "https://marketcheck-prod.apigee.net/v1/search?";
 
-    public String ip_api_key = "2ba35a2c76636662fddee0bea01ca348";
+    public String ip_api_key = "";
     public String ip_base_url = "http://api.ipstack.com/";
 
     ArrayList<CarListing> results;

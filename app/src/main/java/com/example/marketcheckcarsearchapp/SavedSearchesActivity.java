@@ -1,3 +1,10 @@
+/*************************************************************************/
+/*  File Name: SavedSearchesActivity.java                                */
+/*  Purpose: Activity called when opening the saved searches menu.       */
+/*  Created by: Darren Cicala on 3/1/19.                                 */
+/*  Copyright © 2019 Darren Cicala. All rights reserved.                 */
+/*************************************************************************/
+
 package com.example.marketcheckcarsearchapp;
 
 import android.content.Context;

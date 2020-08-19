@@ -1,3 +1,10 @@
+/*************************************************************************/
+/*  File Name: SetFirstImage.java                                        */
+/*  Purpose: Will render the first image in the list view.               */
+/*  Created by: Darren Cicala on 3/1/19.                                 */
+/*  Copyright © 2019 Darren Cicala. All rights reserved.                 */
+/*************************************************************************/
+
 package com.example.marketcheckcarsearchapp;
 
 import android.graphics.Bitmap;

@@ -1,6 +1,11 @@
+/*************************************************************************/
+/*  File Name: NhtsaHttpRequest.java                                     */
+/*  Purpose: Activity for HTTP request to NHTSA API.                     */
+/*  Created by: Darren Cicala on 3/1/19.                                 */
+/*  Copyright © 2019 Darren Cicala. All rights reserved.                 */
+/*************************************************************************/
+
 package com.example.marketcheckcarsearchapp;
-
-
 
 import android.os.AsyncTask;
 import android.widget.EditText;
